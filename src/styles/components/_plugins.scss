@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// Specify styling for plugins
+// -----------------------------------------------------------------------------
+
+
+a.dot-irecommendthis {
+
+
+    &:hover,
+    &:focus{
+        color: darken( $primary-color, 7 );
+    }
+
+    .dot-irecommendthis-count:before {
+
+        @extend .fa;
+        @extend .fa-heart-o;
+        margin-right: 5px;
+
+    }
+
+    &.active {
+        color: $primary-color;
+
+        .dot-irecommendthis-count:before {
+
+            @extend .fa-heart;
+
+        }
+    }
+}
+
+.post-views-count {
+    .icon {
+        @extend .fa;
+        @extend .fa-eye;
+    }
+}

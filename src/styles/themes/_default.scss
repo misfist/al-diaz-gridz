@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+#navigation {
+    margin-bottom: 0;
+}
+
+#header .site-title {
+    font-size: 2rem !important;
+    font-family: $header-font-stack !important;
+    font-weight: bold !important;
+}
+
+.site-info {
+    width: 60%;
+    .site-description {
+        font-size: 1.2rem;
+        break-word: normal;
+    }
+}
+
+#content {
+    background: url( '../images/background.jpg' ) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+a {
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+        color: darken( $primary-color, 7 );
+    }
+}
+
+.primary-menu ul li a {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
